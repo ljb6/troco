@@ -1,0 +1,30 @@
+digraph G {
+  node [shape=box, fontname="Helvetica"];
+  n0 [label="f(6)", style=filled, fillcolor=white];
+  n0 -> n1;
+  n1 [label="f(5)", style=filled, fillcolor=white];
+  n1 -> n2;
+  n2 [label="f(4)", style=filled, fillcolor=white];
+  n2 -> n3;
+  n3 [label="f(3)", style=filled, fillcolor=white];
+  n3 -> n4;
+  n4 [label="f(2)", style=filled, fillcolor=white];
+  n4 -> n5;
+  n5 [label="f(1)", style=filled, fillcolor=white];
+  n5 -> n6;
+  n6 [label="f(0)", style=filled, fillcolor=white];
+  n3 -> n7;
+  n7 [label="f(0)\n= 0 (memo)", style=filled, fillcolor=lightgreen];
+  n2 -> n8;
+  n8 [label="f(1)\n= 1 (memo)", style=filled, fillcolor=lightgreen];
+  n2 -> n9;
+  n9 [label="f(0)\n= 0 (memo)", style=filled, fillcolor=lightgreen];
+  n1 -> n10;
+  n10 [label="f(2)\n= 2 (memo)", style=filled, fillcolor=lightgreen];
+  n1 -> n11;
+  n11 [label="f(1)\n= 1 (memo)", style=filled, fillcolor=lightgreen];
+  n0 -> n12;
+  n12 [label="f(3)\n= 1 (memo)", style=filled, fillcolor=lightgreen];
+  n0 -> n13;
+  n13 [label="f(2)\n= 2 (memo)", style=filled, fillcolor=lightgreen];
+}
